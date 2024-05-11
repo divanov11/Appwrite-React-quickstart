@@ -6,7 +6,7 @@ Appwrite + React fullstack notes app with integrated auth.
 
 ## Setup instructions
 
-Before you can clone and setup a local instance of this project you'll need to setup and appwrite backend and gain the nessesary credentials/have the correct database setup and permisisons configured.
+Before you can clone and setup a local instance of this project you'll need to setup an Appwrite backend and gain the nessesary credentials + have the correct database setup and permisisons configured.
 
 ### Setting up appwrite backend
 
@@ -16,7 +16,7 @@ Before you can clone and setup a local instance of this project you'll need to s
 
 This can be done by going to `overview` -> `Add Platform` -> `Web App`.
 
-3. Add A user
+3. Add a user
 
 4. Add a database and a collection
 
@@ -32,6 +32,11 @@ Add the following attributes in your collection
         <td>body</td>
         <td>string</td>
         <td>100 chars</td>
+    <tr>
+    <tr>    
+        <td>completed</td>
+        <td>boolean</td>
+        <td>Default to false</td>
     <tr>
 </table>
 
