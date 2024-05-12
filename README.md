@@ -1,6 +1,6 @@
 # Appwrite 🤝 React
 
-Appwrite + React fullstack notes app with integrated auth.
+Appwrite + React fullstack todo app with integrated auth.
 
 <img style="max-width:600px" src="./src/assets/notes.png"/>
 
@@ -58,7 +58,7 @@ Add `.env` file and fill in your Appwrite project credentials:
 ```
 VITE_PROJECT_ID=YOUR-PROJECT-ID
 VITE_DATABASE_ID=YOUR-DATABASE-ID
-VITE_COLLECTION_NOTES=YOUR-COLLECTION-ID
+VITE_COLLECTION_TASKS=YOUR-COLLECTION-ID
 ```
 
 -   `cd appwrite-react-quickstart`

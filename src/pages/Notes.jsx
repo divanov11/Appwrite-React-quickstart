@@ -26,7 +26,7 @@ const Notes = () => {
 
     return (
         <>
-            {pro ? (
+            {/* {pro ? (
                 <div id="pro-header">
                     <div className="tag">
                         <span>Pro member</span>
@@ -46,7 +46,18 @@ const Notes = () => {
                     <LockIcon />
                     <p>Unlock purple mode for $1</p>
                 </div>
-            )}
+            )} */}
+
+            <div id="pro-header">
+                <div className="tag">
+                    <span>Pro member</span>
+                </div>
+                <div className="theme-options">
+                    <ThemeOption bg="#954ebe" border="#954ebe" theme="purple" />
+                    <ThemeOption bg="#fff" border="black" theme="light" />
+                    <ThemeOption bg="#000" border="#fff" theme="dark" />
+                </div>
+            </div>
             <div>
                 <h1>✍️ My Todo List</h1>
             </div>
