@@ -1,14 +1,9 @@
-import { useRef } from "react";
 import db from "../appwrite/databases";
 
 const NoteForm = ({ setNotes }) => {
-    const formRef = useRef(null);
-
     const handleAdd = async (e) => {
         e.preventDefault();
-
-        const noteBody = formRef.current.body.value;
-
+        const noteBody = e.target.body.value;
         if (noteBody === "") return;
 
         try {
@@ -26,7 +21,7 @@ const NoteForm = ({ setNotes }) => {
     };
 
     return (
-        <form ref={formRef} onSubmit={handleAdd} id="todo-form">
+        <form onSubmit={handleAdd} id="todo-form">
             <input
                 name="body"
                 type="text"
