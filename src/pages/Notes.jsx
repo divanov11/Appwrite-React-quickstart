@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Query } from "appwrite";
 import { Navigate } from "react-router-dom";
 import db from "../appwrite/databases";
-import TodoForm from "../components/TodoForm";
+import NoteForm from "../components/NoteForm";
 import Note from "../components/Note";
 import LogoutButton from "../components/LogoutButton";
 import { useAuth } from "../context/AuthContext";
@@ -62,7 +62,7 @@ const Notes = () => {
                 <h1>✍️ My Todo List</h1>
             </div>
 
-            <TodoForm setNotes={setNotes} />
+            <NoteForm setNotes={setNotes} />
 
             {notes.map((note) => (
                 <Note key={note.$id} noteData={note} setNotes={setNotes} />

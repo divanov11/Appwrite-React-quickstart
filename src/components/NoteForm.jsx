@@ -1,11 +1,8 @@
 import { useRef } from "react";
 import db from "../appwrite/databases";
-import { Permission, Role } from "appwrite";
-import { useAuth } from "../context/AuthContext";
 
-const TodoForm = ({ setNotes }) => {
+const NoteForm = ({ setNotes }) => {
     const formRef = useRef(null);
-    const { user } = useAuth();
 
     const handleAdd = async (e) => {
         e.preventDefault();
@@ -39,4 +36,4 @@ const TodoForm = ({ setNotes }) => {
     );
 };
 
-export default TodoForm;
+export default NoteForm;
