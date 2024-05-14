@@ -7,30 +7,23 @@ const Note = ({ noteData, setNotes }) => {
 
     useEffect(() => {}, [note]);
 
-    const handleDelete = async (id) => {
+    const handleDelete = async () => {
         db.notes.delete(id);
-        setNotes((prevState) => prevState.filter((note) => note.$id !== id));
+        setNotes((prevState) => prevState.filter((i) => i.$id !== note.$id));
     };
 
-    const handleUpdate = async (id) => {
-        console.log("Handle update clicked!");
+    const handleUpdate = async () => {
         const completed = !note.completed;
-        db.notes.update(id, { completed });
+        db.notes.update(note.$id, { completed });
         setNote({ ...note, completed: completed });
     };
-
     return (
         <div className="note-wrapper">
-            <span
-                className="note-body"
-                onClick={() => {
-                    handleUpdate(note.$id);
-                }}
-            >
-                {note.completed ? <s>{note.body}</s> : <span>{note.body}</span>}
+            <span className="note-body" onClick={handleUpdate}>
+                {note.completed ? <s>{note.body}</s> : <>{note.body}</>}
             </span>
 
-            <div className="delete" onClick={() => handleDelete(note.$id)}>
+            <div className="delete" onClick={handleDelete}>
                 <DeleteIcon />
             </div>
         </div>
