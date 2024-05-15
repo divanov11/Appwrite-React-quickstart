@@ -8,7 +8,7 @@ const Note = ({ noteData, setNotes }) => {
     useEffect(() => {}, [note]);
 
     const handleDelete = async () => {
-        db.notes.delete(id);
+        db.notes.delete(note.$id);
         setNotes((prevState) => prevState.filter((i) => i.$id !== note.$id));
     };
 

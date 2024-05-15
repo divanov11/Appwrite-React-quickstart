@@ -2,6 +2,8 @@
 
 Appwrite + React fullstack todo app with integrated auth.
 
+See tutorial part 1 here: https://youtu.be/_JDeJgsU-bI
+
 <img style="max-width:600px" src="./src/assets/notes.png"/>
 
 ## Setup instructions

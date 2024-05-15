@@ -14,7 +14,7 @@ const NoteForm = ({ setNotes }) => {
             const response = await db.notes.create(payload);
             setNotes((prevState) => [response, ...prevState]);
 
-            formRef.current.reset();
+            e.target.reset();
         } catch (error) {
             console.error(error);
         }
