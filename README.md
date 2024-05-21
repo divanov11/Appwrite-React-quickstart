@@ -2,9 +2,46 @@
 
 Appwrite + React fullstack todo app with integrated auth.
 
+## Understanding Folder Structure
+
+This project is part of a multi part video series, so our folders are structured in a way to represent the code at the end of each video. i.e. `Video 1` == `Part 1`, and so on.
+
+<table>
+    <tr>
+        <th>Part</th>
+        <th>Topic</th>
+        <th>Description</th>
+        <th>View</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>CRUD</td>
+        <td>Basic setup and CRUD with Appwrite + React</td>
+        <td><a href="/Part-1/">View</a></td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Theme Switcher</td>
+        <td>Added theme switcher</td>
+        <td><a href="/Part-2/">View</a></td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Theme Switcher (Template Only)</td>
+        <td>Theme switcher with no backend.</td>
+        <td><a href="/Part-2-Template/">View</a></td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Authentication</td>
+        <td>Login, Logout, Registration & Protected Routes</td>
+        <td><a href="/Part-3/">View</a></td>
+    </tr>
+<table/>
+
 See tutorial part 1 here: https://youtu.be/_JDeJgsU-bI
 
-<img style="max-width:600px" src="./src/assets/notes.png"/>
+<img style="max-width:600px" src="./assets/notes.png"/>
 
 ## Setup instructions
 
@@ -63,5 +100,5 @@ VITE_DATABASE_ID=YOUR-DATABASE-ID
 VITE_COLLECTION_TASKS=YOUR-COLLECTION-ID
 ```
 
--   `cd appwrite-react-quickstart`
+-   `cd <PART #>`
 -   `npm i` && `npm run dev`
