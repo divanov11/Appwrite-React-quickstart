@@ -29,7 +29,7 @@ This project is part of a multi part video series, so our folders are structured
         <td>2</td>
         <td>Theme Switcher (Template Only)</td>
         <td>Theme switcher with no backend.</td>
-        <td><a href="/Part-2-Template-only/">View</a></td>
+        <td><a href="/Part-2-Template-only">View</a></td>
     </tr>
     <tr>
         <td>3</td>
